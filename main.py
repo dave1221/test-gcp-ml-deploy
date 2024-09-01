@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     print("I am inside hello world")
-    return "Hello, World! CDC 2024"
+    return "Hello, World! CDC 2024 Project"
 
 @app.route('/echo/<name>')
 def echo(name):
