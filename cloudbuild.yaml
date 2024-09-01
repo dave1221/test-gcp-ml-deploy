@@ -3,6 +3,5 @@ steps:
   args: ['app', 'deploy']
 timeout: '1600s'
 options:
-  logging: GCS_ONLY  # 默认选项，也可以设置为 CLOUD_LOGGING_ONLY 或 NONE
-logsBucket: gs://my-logs-bucket
+  logging: CLOUD_LOGGING_ONLY  # 或 NONE
 serviceAccount: arboreal-path-434303-q1@appspot.gserviceaccount.com
