@@ -2,3 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['app', 'deploy']
 timeout: '1600s'
+options:
+  logging: GCS_ONLY  # 默认选项，也可以设置为 CLOUD_LOGGING_ONLY 或 NONE
+logsBucket: gs://your-logs-bucket-name
+serviceAccount: your-service-account@example.iam.gserviceaccount.com
