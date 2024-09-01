@@ -3,5 +3,5 @@ steps:
   args: ['app', 'deploy']
 timeout: '1600s'
 options:
-  logging: NONE
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 serviceAccount: arboreal-path-434303-q1@appspot.gserviceaccount.com
